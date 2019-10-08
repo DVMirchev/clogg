@@ -1,5 +1,343 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Version 19.9 released | KLOGG</title><link rel=stylesheet href=/book.min.89885fa0429ec73067282f26fc0c6d38cfc617a443ec4e835d47b821c52c6e92.css integrity="sha256-iYhfoEKexzBnKC8m/AxtOM/GF6RD7E6DXUe4IcUsbpI="><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/fa/all.min.css><link rel=stylesheet href=/fa/brands.min.css></head><body><input type=checkbox class=hidden id=menu-control><main class="flex container"><aside class="book-menu fixed"><nav><h2 class=book-brand><a href=https://klogg.filimonov.dev/><img src=/klogg.png alt=Logo><span>KLOGG</span></a></h2><ul><li class=book-section-flat><span>News</span><ul><li><a href=/docs/news/release_19.9/ class=active>Version 19.9 released</a></li><li><a href=/docs/news/release_19.2/>Version 19.2 released</a></li><li><a href=/docs/news/release_17.12/>Version 17.12 released</a></li><li><a href=/docs/news/release_1.1.3-r1/>Version 1.1.3-r1 released</a></li></ul></li><li class=book-section-flat><a href=/docs/getting_involved/>Getting Involved</a><ul></ul></li><li class=book-section-flat><a href=/docs/legal_notice/>Legal Notice</a><ul></ul></li></ul><ul><hr><li><a href=https://github.com/variar/glogg><i class="fab fa-github fa-lg"></i>klogg on GitHub</a></li><li><a href=https://github.com/nickbnf/glogg><i class="fab fa-github fa-lg"></i>glogg on GitHub</a></li><hr><li class=book-section-flat><span>Downloads</span><ul><li><a href=https://github.com/variar/klogg/releases/tag/v19.9><img src="https://img.shields.io/github/v/release/variar/klogg?label=GitHub%20Release&amp;style=for-the-badge" alt="GitHub Release"></a></li><li><a href=https://bintray.com/variar/generic/klogg/_latestVersion><img src="https://img.shields.io/badge/dynamic/json.svg?label=Bintray&amp;query=name&amp;style=for-the-badge&amp;url=https%3A%2F%2Fapi.bintray.com%2Fpackages%2Fvariar%2Fgeneric%2Fklogg%2Fversions%2F_latest" alt=Bintray></a></li><li><a href=https://chocolatey.org/packages/klogg><img src="https://img.shields.io/chocolatey/v/klogg?style=for-the-badge" alt=Chocolatey></a></li></ul></li><li class=book-section-flat><span>Development builds</span><ul><li><a href=https://github.com/variar/klogg/releases/tag/continuous-win target=_blank><i class="fab fa-windows fa-lg"></i>Windows</a></li><li><a href=https://github.com/variar/klogg/releases/tag/continuous-linux target=_blank><i class="fab fa-linux fa-lg"></i>Linux</a></li><li><a href=https://github.com/variar/klogg/releases/tag/continuous-osx target=_blank><i class="fab fa-apple fa-lg"></i>Mac</a></li></ul></li></ul></nav><script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script></aside><div class=book-page><header class="flex align-center justify-between book-header"><label for=menu-control><img src=/svg/menu.svg alt=Menu></label>
-<strong>Version 19.9 released</strong></header><article class=markdown><h2 id=version-19-9>Version 19.9</h2><p>The main focus of this release was fixing bugs with reading changing files.
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Version 19.9 released | KLOGG</title>
+
+
+<link rel="stylesheet" href="/book.min.89885fa0429ec73067282f26fc0c6d38cfc617a443ec4e835d47b821c52c6e92.css" integrity="sha256-iYhfoEKexzBnKC8m/AxtOM/GF6RD7E6DXUe4IcUsbpI=">
+
+
+
+
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  <link rel="stylesheet" href="/fa/all.min.css">
+<link rel="stylesheet" href="/fa/brands.min.css">
+
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav>
+<h2 class="book-brand">
+  <a href="https://klogg.filimonov.dev/"><img src="/klogg.png" alt="Logo" /><span>KLOGG</span>
+  </a>
+</h2>
+
+
+
+
+
+
+    
+
+  
+  
+
+
+
+
+
+ 
+  
+    
+
+  <ul>
+    
+      
+        
+
+  <li  class="book-section-flat" >
+    
+      <span>News</span>
+    
+
+    
+
+  <ul>
+    
+      
+        <li>
+
+  <a href="/docs/news/release_19.9/"  class="active">
+      Version 19.9 released
+  </a>
+
+</li>
+      
+    
+      
+        <li>
+
+  <a href="/docs/news/release_19.2/" >
+      Version 19.2 released
+  </a>
+
+</li>
+      
+    
+      
+        <li>
+
+  <a href="/docs/news/release_17.12/" >
+      Version 17.12 released
+  </a>
+
+</li>
+      
+    
+      
+        <li>
+
+  <a href="/docs/news/release_1.1.3-r1/" >
+      Version 1.1.3-r1 released
+  </a>
+
+</li>
+      
+    
+  </ul>
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li  class="book-section-flat" >
+    
+      
+
+  <a href="/docs/getting_involved/" >
+      Getting Involved
+  </a>
+
+
+    
+
+    
+
+  <ul>
+    
+  </ul>
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li  class="book-section-flat" >
+    
+      
+
+  <a href="/docs/legal_notice/" >
+      Legal Notice
+  </a>
+
+
+    
+
+    
+
+  <ul>
+    
+  </ul>
+
+
+  </li>
+
+
+      
+    
+  </ul>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+<ul>
+    <hr/>
+
+<li>
+<a href="https://github.com/variar/glogg">
+    <i class="fab fa-github fa-lg"></i> klogg on GitHub
+</a>
+</li>
+
+<li>
+
+<a href="https://github.com/nickbnf/glogg">
+    <i class="fab fa-github fa-lg"></i> glogg on GitHub
+</a>
+</li>
+
+    <hr/>
+    <li class="book-section-flat">
+        <span>Downloads</span>
+        <ul>
+            <li>
+                <a href="https://github.com/variar/klogg/releases/tag/v19.9">
+                    <img src="https://img.shields.io/github/v/release/variar/klogg?label=GitHub%20Release&amp;style=for-the-badge" alt="GitHub Release">
+                </a>
+            </li>
+
+            <li>
+                <a href="https://bintray.com/variar/generic/klogg/_latestVersion">
+                    <img src="https://img.shields.io/badge/dynamic/json.svg?label=Bintray&amp;query=name&amp;style=for-the-badge&amp;url=https%3A%2F%2Fapi.bintray.com%2Fpackages%2Fvariar%2Fgeneric%2Fklogg%2Fversions%2F_latest" alt="Bintray">
+                </a>
+            </li>
+
+            <li>
+                <a href="https://chocolatey.org/packages/klogg">
+                    <img src="https://img.shields.io/chocolatey/v/klogg?style=for-the-badge" alt="Chocolatey">
+                </a>
+            </li>
+        </ul>
+    </li>
+
+    <li class="book-section-flat">
+        <span>Development builds</span>
+        <ul>
+            <li>
+                <a href="https://github.com/variar/klogg/releases/tag/continuous-win" target="_blank">
+                    <i class="fab fa-windows fa-lg"></i> Windows
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/variar/klogg/releases/tag/continuous-linux" target="_blank">
+                    <i class="fab fa-linux fa-lg"></i> Linux
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/variar/klogg/releases/tag/continuous-osx" target="_blank">
+                    <i class="fab fa-apple fa-lg"></i> Mac
+                </a>
+            </li>
+        </ul>
+    </li>
+
+</ul>
+
+
+</nav>
+
+
+<script>
+(function() {
+  var menu = document.querySelector("aside.book-menu nav");
+  addEventListener("beforeunload", function(event) {
+    localStorage.setItem("menu.scrollTop", menu.scrollTop);
+  });
+  menu.scrollTop = localStorage.getItem("menu.scrollTop");
+})();
+</script>
+
+    </aside>
+
+    <div class="book-page">
+      <header class="flex align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" alt="Menu" />
+  </label>
+  <strong>Version 19.9 released</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h2 id="version-19-9">Version 19.9</h2>
+
+<p>The main focus of this release was fixing bugs with reading changing files.
 There were some usabiltiy improvements, UI became more responsive
-and a few minor features sneaked in. And new icons by wiz0u.</p><p>Configuration file is now split in two parts:</p><ul><li>user settings (they can be changed through UI and <em>klogg</em> does not edit them)</li><li>application settings (history of opened files, search patterns, etc.,
-these are changed automatically by <em>klogg</em>)</li></ul><p>This release has following changes:</p><ul><li>fixes for reindexing files that are changing on disk</li><li>autorefresh of search results</li><li>quickfind searching on separate thread (avoiding ui freezes)</li><li>usabiltiy improvements (tab closing options, search bar layout)</li><li>option to paste data from clipboard and do usual searching (data is saved to temporary file)</li><li>abitlity to open several files from &lsquo;Open file&rsquo; dialog</li><li>3rdparty libraries updates</li></ul><p>Download on Github: <a href=https://github.com/variar/klogg/releases/tag/v19.9>klogg 19.9</a></p></article><div class="book-footer justify-end"><div><a href=https://github.com/variar/klogg/edit/master/website/content/docs/news/release_19.9.md target=_blank rel=noopener><img src=/svg/edit.svg alt=Edit> Edit this page</a></div></div><script defer src=/fa/brands.min.js></script></div><aside class="book-toc level-2 fixed"><nav id=TableOfContents><ul><li><ul><li><a href=#version-19-9>Version 19.9</a></li></ul></li></ul></nav></aside></main></body></html>
+and a few minor features sneaked in. And new icons by wiz0u.</p>
+
+<p>Configuration file is now split in two parts:</p>
+
+<ul>
+<li>user settings (they can be changed through UI and <em>klogg</em> does not edit them)</li>
+<li>application settings (history of opened files, search patterns, etc.,
+these are changed automatically by <em>klogg</em>)</li>
+</ul>
+
+<p>This release has following changes:</p>
+
+<ul>
+<li>fixes for reindexing files that are changing on disk</li>
+<li>autorefresh of search results</li>
+<li>quickfind searching on separate thread (avoiding ui freezes)</li>
+<li>usabiltiy improvements (tab closing options, search bar layout)</li>
+<li>option to paste data from clipboard and do usual searching (data is saved to temporary file)</li>
+<li>abitlity to open several files from &lsquo;Open file&rsquo; dialog</li>
+<li>3rdparty libraries updates</li>
+</ul>
+
+<p>Download on Github: <a href="https://github.com/variar/klogg/releases/tag/v19.9">klogg 19.9</a></p>
+</article>
+
+      
+<div class="book-footer justify-end">
+  
+  
+  <div>
+    <a href="https://github.com/variar/klogg/edit/master/website/content/docs/news/release_19.9.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" alt="Edit" /> Edit this page
+    </a>
+  </div>
+  
+</div>
+
+
+      <script defer src="/fa/brands.min.js"></script>
+
+    </div>
+
+    
+  
+
+  <aside class="book-toc level-2 fixed">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#version-19-9">Version 19.9</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+
+  
+  
+</body>
+
+</html>

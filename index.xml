@@ -1,9 +1,59 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>About on KLOGG</title><link>https://klogg.filimonov.dev/</link><description>Recent content in About on KLOGG</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 21 Sep 2019 15:42:17 +0100</lastBuildDate><atom:link href="https://klogg.filimonov.dev/index.xml" rel="self" type="application/rss+xml"/><item><title>Version 19.9 released</title><link>https://klogg.filimonov.dev/docs/news/release_19.9/</link><pubDate>Sat, 21 Sep 2019 15:42:17 +0100</pubDate><guid>https://klogg.filimonov.dev/docs/news/release_19.9/</guid><description>Version 19.9 The main focus of this release was fixing bugs with reading changing files. There were some usabiltiy improvements, UI became more responsive and a few minor features sneaked in. And new icons by wiz0u.
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on KLOGG</title>
+    <link>https://klogg.filimonov.dev/</link>
+    <description>Recent content in About on KLOGG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 21 Sep 2019 15:42:17 +0100</lastBuildDate>
+    
+	<atom:link href="https://klogg.filimonov.dev/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Version 19.9 released</title>
+      <link>https://klogg.filimonov.dev/docs/news/release_19.9/</link>
+      <pubDate>Sat, 21 Sep 2019 15:42:17 +0100</pubDate>
+      
+      <guid>https://klogg.filimonov.dev/docs/news/release_19.9/</guid>
+      <description>Version 19.9 The main focus of this release was fixing bugs with reading changing files. There were some usabiltiy improvements, UI became more responsive and a few minor features sneaked in. And new icons by wiz0u.
 Configuration file is now split in two parts:
-user settings (they can be changed through UI and klogg does not edit them) application settings (history of opened files, search patterns, etc., these are changed automatically by klogg) This release has following changes:</description></item><item><title>Version 19.2 released</title><link>https://klogg.filimonov.dev/docs/news/release_19.2/</link><pubDate>Sat, 27 Jan 2018 15:42:17 +0100</pubDate><guid>https://klogg.filimonov.dev/docs/news/release_19.2/</guid><description>Version 19.2 This release has following changes:
-significant performance improvements during loading files and searching added an option to keep file closed added polling file settings on Windows renamed filters to highlighters based on pull request by @arthurspa added color picker for choosing highlighters color based on pull request by @safield some quick find fixes added a menu item to clear current log file allow to drag’n’drop several files change bringing main window to front on Windows fixed some UI bugs (progress updates when searching in large files, grey text lines when using limited search areas and more) merged several fixes for file monitoring by @gin-ahirsch added some more encodings based on pull request by @Seeraeuber created builds for x86 and x64 versions of Windows fixed deb and rpm packages add checking for new version on Windows (new version info file is downloaded directly from GitHub) updated 3rdparty libraries to latest versions Download on Github: klogg 19.</description></item><item><title>Version 17.12 released</title><link>https://klogg.filimonov.dev/docs/news/release_17.12/</link><pubDate>Sat, 27 Jan 2018 15:42:17 +0100</pubDate><guid>https://klogg.filimonov.dev/docs/news/release_17.12/</guid><description>Version 17.12 This release is base on glogg 1.1.4. The aims of this release are performance improvement and code base modernization. Several feature requests from upstream have been implemented.
+ user settings (they can be changed through UI and klogg does not edit them) application settings (history of opened files, search patterns, etc., these are changed automatically by klogg)  This release has following changes:</description>
+    </item>
+    
+    <item>
+      <title>Version 19.2 released</title>
+      <link>https://klogg.filimonov.dev/docs/news/release_19.2/</link>
+      <pubDate>Sat, 27 Jan 2018 15:42:17 +0100</pubDate>
+      
+      <guid>https://klogg.filimonov.dev/docs/news/release_19.2/</guid>
+      <description>Version 19.2 This release has following changes:
+ significant performance improvements during loading files and searching added an option to keep file closed added polling file settings on Windows renamed filters to highlighters based on pull request by @arthurspa added color picker for choosing highlighters color based on pull request by @safield some quick find fixes added a menu item to clear current log file allow to drag’n’drop several files change bringing main window to front on Windows fixed some UI bugs (progress updates when searching in large files, grey text lines when using limited search areas and more) merged several fixes for file monitoring by @gin-ahirsch added some more encodings based on pull request by @Seeraeuber created builds for x86 and x64 versions of Windows fixed deb and rpm packages add checking for new version on Windows (new version info file is downloaded directly from GitHub) updated 3rdparty libraries to latest versions   Download on Github: klogg 19.</description>
+    </item>
+    
+    <item>
+      <title>Version 17.12 released</title>
+      <link>https://klogg.filimonov.dev/docs/news/release_17.12/</link>
+      <pubDate>Sat, 27 Jan 2018 15:42:17 +0100</pubDate>
+      
+      <guid>https://klogg.filimonov.dev/docs/news/release_17.12/</guid>
+      <description>Version 17.12 This release is base on glogg 1.1.4. The aims of this release are performance improvement and code base modernization. Several feature requests from upstream have been implemented.
 Versioning changed to calendar versioning scheme: Year.Month.Patch.
 Changes:
-Updated to Qt 5.9 (Qt 5.10 on Mac OS) Automagic encoding detection based on uchardet library Using Entropia File System Watcher on all platforms to monitor file changes New index layout in memory to speed up file loading and searching Saving matching lines from filtered view to a file Saving follow mode and marks for opened files Separate portable build Some quick find hotkeys changed Download on Github: klogg 17.</description></item><item><title>Version 1.1.3-r1 released</title><link>https://klogg.filimonov.dev/docs/news/release_1.1.3-r1/</link><pubDate>Sat, 27 Jan 2018 15:42:17 +0100</pubDate><guid>https://klogg.filimonov.dev/docs/news/release_1.1.3-r1/</guid><description>Version 1.1.3-r1 This release is based on glogg 1.1.3.
+ Updated to Qt 5.9 (Qt 5.10 on Mac OS) Automagic encoding detection based on uchardet library Using Entropia File System Watcher on all platforms to monitor file changes New index layout in memory to speed up file loading and searching Saving matching lines from filtered view to a file Saving follow mode and marks for opened files Separate portable build Some quick find hotkeys changed   Download on Github: klogg 17.</description>
+    </item>
+    
+    <item>
+      <title>Version 1.1.3-r1 released</title>
+      <link>https://klogg.filimonov.dev/docs/news/release_1.1.3-r1/</link>
+      <pubDate>Sat, 27 Jan 2018 15:42:17 +0100</pubDate>
+      
+      <guid>https://klogg.filimonov.dev/docs/news/release_1.1.3-r1/</guid>
+      <description>Version 1.1.3-r1 This release is based on glogg 1.1.3.
 Changes:
-Merged with upstream 1.1.3 Cache some search results in memory Use several cores during search Download on Github: klogg 1.1.3-r1</description></item></channel></rss>
+ Merged with upstream 1.1.3 Cache some search results in memory Use several cores during search  Download on Github: klogg 1.1.3-r1</description>
+    </item>
+    
+  </channel>
+</rss>
