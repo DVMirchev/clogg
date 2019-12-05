@@ -12,6 +12,18 @@
     
     
     <item>
+      <title>Version 19.12 preview</title>
+      <link>https://klogg.filimonov.dev/docs/news/release_19.12_preview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://klogg.filimonov.dev/docs/news/release_19.12_preview/</guid>
+      <description>Version 19.12 preview There are several important bugfixes and new features for the next version.
+New features A new scratchpad tool has beed added. It can be used to store text and perform some transformations. For now it supports: - base64 decoding - json indenting - xml formatting
+These transformations I use the most. Any suggestions are welcome.
+Another big feature is new multi-window mode. It is experimental and you have to enable it in settings dialog.</description>
+    </item>
+    
+    <item>
       <title>Version 19.9 released</title>
       <link>https://klogg.filimonov.dev/docs/news/release_19.9/</link>
       <pubDate>Sat, 21 Sep 2019 15:42:17 +0100</pubDate>
