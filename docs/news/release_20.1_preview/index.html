@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Version 19.2 released | KLOGG</title>
+<title>Version 20.1 preview | KLOGG</title>
 
 
 <link rel="stylesheet" href="/book.min.89885fa0429ec73067282f26fc0c6d38cfc617a443ec4e835d47b821c52c6e92.css" integrity="sha256-iYhfoEKexzBnKC8m/AxtOM/GF6RD7E6DXUe4IcUsbpI=">
@@ -86,7 +86,7 @@ https://github.com/alex-shpak/hugo-book
       
         <li>
 
-  <a href="/docs/news/release_20.1_preview/" >
+  <a href="/docs/news/release_20.1_preview/"  class="active">
       Version 20.1 preview
   </a>
 
@@ -116,7 +116,7 @@ https://github.com/alex-shpak/hugo-book
       
         <li>
 
-  <a href="/docs/news/release_19.2/"  class="active">
+  <a href="/docs/news/release_19.2/" >
       Version 19.2 released
   </a>
 
@@ -307,37 +307,81 @@ https://github.com/alex-shpak/hugo-book
   <label for="menu-control">
     <img src="/svg/menu.svg" alt="Menu" />
   </label>
-  <strong>Version 19.2 released</strong>
+  <strong>Version 20.1 preview</strong>
 </header>
 
       
 <article class="markdown">
 
-<h2 id="version-19-2">Version 19.2</h2>
+<h2 id="version-20-1-preview">Version 20.1 preview</h2>
 
-<p>This release has following changes:</p>
+<p>I&rsquo;ve decided to postpone next release to January 2020. Mainly because I like
+20.1 version number better than 19.12. This allowed to add sevaral major features.</p>
 
-<ul>
-<li>significant performance improvements during loading files and searching</li>
-<li>added an option to keep file closed</li>
-<li>added polling file settings on Windows</li>
-<li>renamed filters to highlighters based on pull request by @arthurspa</li>
-<li>added color picker for choosing highlighters color based on pull request by @safield</li>
-<li>some quick find fixes</li>
-<li>added a menu item to clear current log file</li>
-<li>allow to drag’n’drop several files</li>
-<li>change bringing main window to front on Windows</li>
-<li>fixed some UI bugs (progress updates when searching in large files, grey text lines when using limited search areas and more)</li>
-<li>merged several fixes for file monitoring by @gin-ahirsch</li>
-<li>added some more encodings based on pull request by @Seeraeuber</li>
-<li>created builds for x86 and x64 versions of Windows</li>
-<li>fixed deb and rpm packages</li>
-<li>add checking for new version on Windows (new version info file is downloaded directly from GitHub)</li>
-<li>updated 3rdparty libraries to latest versions
-<br /></li>
-</ul>
+<p>Preview builds can be downloaded from Github:</p>
 
-<p>Download on Github: <a href="https://github.com/variar/klogg/releases/tag/v19.2">klogg 19.2</a></p>
+<p>
+
+
+  
+  
+
+
+<a  href="https://github.com/variar/klogg/releases/tag/continuous-win"   target="_blank"  class="book-btn">
+  Windows
+</a>
+
+
+
+
+  
+  
+
+
+<a  href="https://github.com/variar/klogg/releases/tag/continuous-linux"   target="_blank"  class="book-btn">
+  Linux
+</a>
+
+
+
+
+  
+  
+
+
+<a  href="https://github.com/variar/klogg/releases/tag/continuous-osx"   target="_blank"  class="book-btn">
+  Mac
+</a>
+</p>
+
+<p>Feedback is very welcome.</p>
+
+<h3 id="new-features">New features</h3>
+
+<p>Favorites menu to save files that are opened not frequently enough to stay in recent
+files history.</p>
+
+<p>Opening archives (zip, 7z, tar) and compressed files (gzip, bzip2, xz, lzma). Files
+are extracted to temporary location and opened from there.</p>
+
+<p>Opening files from network locations. Klogg will download file to temporary location
+and open it.</p>
+
+<p>Renaming tabs for opened files.</p>
+
+<p>New encoding menu with support for more common encodings included with Qt.</p>
+
+<p>Documentation updates.</p>
+
+<h3 id="bugfixes">Bugfixes</h3>
+
+<p>Version 19.12 introduced multi-window mode. Thanks to bug reports on GitHub saving
+configuration for this case now works as expected.</p>
+
+<p>Several rendering bugs in highlighters dialog have been found that existed since glogg times.
+They do not reproduce on Mac VM with software rendering. After some research these are now fixed.</p>
+
+<p>Some single letter hot keys were broken in 19.9. Fixed.</p>
 </article>
 
       
@@ -345,7 +389,7 @@ https://github.com/alex-shpak/hugo-book
   
   
   <div>
-    <a href="https://github.com/variar/klogg/edit/master/website/content/docs/news/release_19.2.md" target="_blank" rel="noopener">
+    <a href="https://github.com/variar/klogg/edit/master/website/content/docs/news/release_20.1_preview.md" target="_blank" rel="noopener">
       <img src="/svg/edit.svg" alt="Edit" /> Edit this page
     </a>
   </div>
@@ -366,7 +410,11 @@ https://github.com/alex-shpak/hugo-book
 <ul>
 <li>
 <ul>
-<li><a href="#version-19-2">Version 19.2</a></li>
+<li><a href="#version-20-1-preview">Version 20.1 preview</a>
+<ul>
+<li><a href="#new-features">New features</a></li>
+<li><a href="#bugfixes">Bugfixes</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
