@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Version 1.1.3-r1 released | KLOGG</title>
+<title>Version 20.9 preview | KLOGG</title>
 
 
 <link rel="stylesheet" href="/book.min.89885fa0429ec73067282f26fc0c6d38cfc617a443ec4e835d47b821c52c6e92.css" integrity="sha256-iYhfoEKexzBnKC8m/AxtOM/GF6RD7E6DXUe4IcUsbpI=">
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function () {
       
         <li>
 
-  <a href="/docs/news/release_20.9_preview/" >
+  <a href="/docs/news/release_20.9_preview/"  class="active">
       Version 20.9 preview
   </a>
 
@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', function () {
       
         <li>
 
-  <a href="/docs/news/release_1.1.3-r1/"  class="active">
+  <a href="/docs/news/release_1.1.3-r1/" >
       Version 1.1.3-r1 released
   </a>
 
@@ -341,25 +341,75 @@ document.addEventListener('DOMContentLoaded', function () {
   <label for="menu-control">
     <img src="/svg/menu.svg" alt="Menu" />
   </label>
-  <strong>Version 1.1.3-r1 released</strong>
+  <strong>Version 20.9 preview</strong>
 </header>
 
       
 <article class="markdown">
 
-<h2 id="version-1-1-3-r1">Version 1.1.3-r1</h2>
+<h2 id="version-20-9">Version 20.9</h2>
 
-<p>This release is based on glogg 1.1.3.</p>
+<p>As expected I didn&rsquo;t have much time to work on klogg this summer. However, there were several free weekends,
+and I was able to do some bugfix and new feature development.</p>
 
-<p>Changes:</p>
+<p>Preview builds can be downloaded from Github:</p>
+
+<p>
+
+
+  
+  
+
+
+<a  href="https://github.com/variar/klogg/releases/tag/continuous-win"   target="_blank"  class="book-btn">
+  Windows
+</a>
+
+
+
+
+  
+  
+
+
+<a  href="https://github.com/variar/klogg/releases/tag/continuous-linux"   target="_blank"  class="book-btn">
+  Linux
+</a>
+
+
+
+
+  
+  
+
+
+<a  href="https://github.com/variar/klogg/releases/tag/continuous-osx"   target="_blank"  class="book-btn">
+  Mac
+</a>
+</p>
+
+<p>Feedback is very welcome.</p>
+
+<h3 id="changelog">Changelog</h3>
+
+<p>Major new features:</p>
 
 <ul>
-<li>Merged with upstream 1.1.3</li>
-<li>Cache some search results in memory</li>
-<li>Use several cores during search</li>
+<li>A menu to switch between opened files</li>
+<li>Highlighters reworked, now several sets of highlighting rules can be configured and chosen using context menu</li>
+<li>Some support for dark OS themes</li>
+<li>Some support for HiDPI displays</li>
 </ul>
 
-<p>Download on Github: <a href="https://github.com/variar/klogg/releases/tag/v1.1.3_r1">klogg 1.1.3-r1</a></p>
+<p>Bugixes and minor improvements</p>
+
+<ul>
+<li>Fixed RPM packaging</li>
+<li>Fixed bug with case-insensitive search autocomplete</li>
+<li>Made some shortcut behavior more user-friendly</li>
+</ul>
+
+<p>As usual 3rdparty libraries were updated, some bugs were fixed, and some more were introduced.</p>
 </article>
 
       
@@ -367,7 +417,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
   
   <div>
-    <a href="https://github.com/variar/klogg/edit/master/website/content/docs/news/release_1.1.3-r1.md" target="_blank" rel="noopener">
+    <a href="https://github.com/variar/klogg/edit/master/website/content/docs/news/release_20.9_preview.md" target="_blank" rel="noopener">
       <img src="/svg/edit.svg" alt="Edit" /> Edit this page
     </a>
   </div>
@@ -388,7 +438,10 @@ document.addEventListener('DOMContentLoaded', function () {
 <ul>
 <li>
 <ul>
-<li><a href="#version-1-1-3-r1">Version 1.1.3-r1</a></li>
+<li><a href="#version-20-9">Version 20.9</a>
+<ul>
+<li><a href="#changelog">Changelog</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
