@@ -21,7 +21,7 @@
 Preview builds can be downloaded from Github:
  Windows  Linux  Mac  Feedback is very welcome.
 Changelog Major new features:
- A menu to switch between opened files Highlighters reworked, now several sets of highlighting rules can be configured and chosen using context menu Some support for dark OS themes Some support for HiDPI displays  Bugixes and minor improvements</description>
+ Highlighters reworked:  Several sets of highlighting rules can be configured and chosen using context menu Highlighters can be configured to colorize only matching part of line Added an option to match using simple strings Highlighters configuration can be exported and imported on other machine  An option to choose UI style, including dark theme based on QDarkStyleSheet A menu to switch between opened files Some support for dark OS themes Some support for HiDPI displays  Bugixes and minor improvements</description>
     </item>
     
     <item>
