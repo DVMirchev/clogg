@@ -2,10 +2,9 @@
 <html lang="en">
 
 <head>
-	<meta name="generator" content="Hugo 0.58.0" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About | KLOGG</title>
+<title>Privacy Policy | KLOGG</title>
 
 
 <link rel="stylesheet" href="/book.min.89885fa0429ec73067282f26fc0c6d38cfc617a443ec4e835d47b821c52c6e92.css" integrity="sha256-iYhfoEKexzBnKC8m/AxtOM/GF6RD7E6DXUe4IcUsbpI=">
@@ -16,7 +15,7 @@
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 
 
-<link rel="alternate" type="application/rss+xml" href="https://klogg.filimonov.dev/index.xml" title="KLOGG" />
+<link rel="alternate" type="application/rss+xml" href="https://klogg.filimonov.dev/docs/privacy_policy/index.xml" title="KLOGG" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -248,7 +247,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
       
 
-  <a href="/docs/privacy_policy/" >
+  <a href="/docs/privacy_policy/"  class="active">
       Privacy Policy
   </a>
 
@@ -371,124 +370,65 @@ document.addEventListener('DOMContentLoaded', function () {
   <label for="menu-control">
     <img src="/svg/menu.svg" alt="Menu" />
   </label>
-  <strong>About</strong>
+  <strong>Privacy Policy</strong>
 </header>
 
       
 <article class="markdown">
 
-<h2 id="faster-log-explorer">Faster log explorer</h2>
+<h2 id="privacy-policy">Privacy policy</h2>
 
-<p><em>klogg</em> is a multi-platform GUI application to search through all kinds of text log files using regular expressions. It is fork of <a href="https://glogg.bonnefon.org/">glogg project</a> created by <a href="https://github.com/nickbnf">Nicolas Bonnefon</a>.</p>
+<p>We strongly support your right to privacy when using klogg.</p>
 
-<p><em>klogg</em> is designed to:</p>
+<p>Our privacy policy is simple: your data is none of our business.</p>
 
-<ul>
-<li>be fast</li>
-<li>handle huge log files</li>
-<li>provide a clear view of the matches even in heavily cluttered files.</li>
-</ul>
+<p>To the extent that klogg app and website can provide their functionality without doing so, we prefer to avoid collecting data from you.</p>
 
-<p>General usage can be described as simple loop:</p>
+<p>In the cases where we do collect data, we try to be clear about why we&rsquo;re collecting it, tell you how long we keep it, delete it when we no longer need it, and give you the ability to opt out of collection whenever possible.</p>
 
+<h3 id="crash-logs">Crash Logs</h3>
 
+<p>By default, if klogg crashes while you&rsquo;re using it, anonymized data about the crash will be collected to help us identify the cause of the crash and hopefully fix it in a future update. These &ldquo;crash logs&rdquo; contain technical information about the state of the app during the crash (processor information, operating system version, process and thread information, stack traces for each thread, the list of loaded modules)</p>
 
-<script src="/mermaid.min.js"></script>
+<p>Whenever possible, klogg will allow you to review the entire contents of the crash log before you decide whether or not to send it.</p>
 
+<p>No data is sent from klogg without explicit user confirmation.</p>
 
+<p>These data is sent for processing to <a href="https://sentry.io">Sentry</a>. Please read their <a href="https://sentry.io/privacy/">privacy policy</a> and <a href="https://sentry.io/security/">security</a>.</p>
 
-<p class="mermaid">
-  
+<p>We retain crash logs for 30 days.</p>
 
-graph TD;
-    A[Search for some regular expression]-->B[Mark interesting lines to keep in results window];
-    B-->A;
-  
+<p>Apple may also collect crash logs if the privacy settings of your device allow it.</p>
 
-</p>
+<h3 id="update-checking">Update Checking</h3>
 
+<p>By default, klogg periodically check to see if a newer version of the app is available, so that you can be given the choice to update if you wish.</p>
 
-<p>Using this pattern you can get full picture of what was happening at the time of logging.</p>
+<p>An update check request is done by downloading file from klogg Github repository. This request does not contain any data.</p>
 
-<h2 id="features">Features</h2>
+<p>You may turn off update checking from the app&rsquo;s preferences window.</p>
 
-<div class="book-columns flex flex-wrap">
-  
-  <div class="flex-even markdown-inner">
-    <em>klogg</em> inherited a lot of features from <em>glogg</em></p>
+<p>We do not store any metadata about update requests.</p>
+
+<h3 id="data-not-collected">Data Not Collected</h3>
+
+<p>Except as described above, and as required to perform the application&rsquo;s core functionality at the user&rsquo;s request, klogg does not send out any private information. This includes:</p>
 
 <ul>
-<li>Runs on Unix-like systems, Windows and Mac thanks to Qt5</li>
-<li>Displays search results separately from original file</li>
-<li>Supports Perl-compatible regular expressions</li>
-<li>Colorizes the log and search results</li>
-<li>Displays a context view of where in the log the lines of interest are</li>
-<li>Is fast and reads the file directly from disk, without loading it into memory</li>
-<li>Watches for file changes on disk and reloads it (kind of like tail)</li>
-<li>Is open source, released under the GPL</li>
+<li>Your keyboard input</li>
+<li>Contents of files you are working with</li>
+<li>Screen contents</li>
+<li>Hostnames</li>
+<li>Filenames</li>
+<li>Usernames</li>
+<li>Passwords</li>
 </ul>
-  </div>
-  
-  <div class="flex-even markdown-inner">
-    <em>klogg</em> improves and brings more</p>
 
-<ul>
-<li>Builds initial file index significantly faster</li>
-<li>Uses multiple CPU cores to do regular expression matching</li>
-<li>Detects log file encoding using uchardet library (support utf8, utf16, cp1251 and more)</li>
-<li>Allows to perform search in a portion of huge log file</li>
-<li>Keeps in-memory cache of search results per search pattern</li>
-<li>Allows to paste some text from clipboard for further analysis</li>
-<li>Has portable version for Windows (no need to install)</li>
-</ul>
-  </div>
-  
-</div>
+<h3 id="questions-and-feedback">Questions and Feedback</h3>
 
+<p>Our privacy policies might change or be edited for clarity over time. Up-to-date information will always be available from this page.</p>
 
-<h2 id="downloads">Downloads</h2>
-
-<p>Latest stable version:</p>
-
-<p><a href="https://github.com/variar/klogg/releases/tag/v19.9"> <img src="https://img.shields.io/github/v/release/variar/klogg?label=GitHub%20Release&amp;style=for-the-badge" alt="GitHub Release" /></a>
-<a href="https://bintray.com/variar/generic/klogg/_latestVersion"> <img src="https://img.shields.io/badge/dynamic/json.svg?label=Bintray&amp;query=name&amp;style=for-the-badge&amp;url=https%3A%2F%2Fapi.bintray.com%2Fpackages%2Fvariar%2Fgeneric%2Fklogg%2Fversions%2F_latest" alt="Bintray" /></a>
-<a href="https://chocolatey.org/packages/klogg"> <img src="https://img.shields.io/chocolatey/v/klogg?style=for-the-badge" alt="Chocolatey" /></a></p>
-
-<p>Latest development builds can be downloaded from releases on Github:</p>
-
-<p>
-
-
-  
-  
-
-
-<a  href="https://github.com/variar/klogg/releases/tag/continuous-win"   target="_blank"  class="book-btn">
-  Windows
-</a>
-
-
-
-
-  
-  
-
-
-<a  href="https://github.com/variar/klogg/releases/tag/continuous-linux"   target="_blank"  class="book-btn">
-  Linux
-</a>
-
-
-
-
-  
-  
-
-
-<a  href="https://github.com/variar/klogg/releases/tag/continuous-osx"   target="_blank"  class="book-btn">
-  Mac
-</a>
-</p>
+<p>Please <a href="https://github.com/vairar">contact us</a> if you have any questions about our data collection or privacy policies. We&rsquo;ll be more than happy to discuss them with you.</p>
 </article>
 
       
@@ -496,7 +436,7 @@ graph TD;
   
   
   <div>
-    <a href="https://github.com/variar/klogg/edit/master/website/content/_index.md" target="_blank" rel="noopener">
+    <a href="https://github.com/variar/klogg/edit/master/website/content/docs/privacy_policy/_index.md" target="_blank" rel="noopener">
       <img src="/svg/edit.svg" alt="Edit" /> Edit this page
     </a>
   </div>
@@ -517,9 +457,13 @@ graph TD;
 <ul>
 <li>
 <ul>
-<li><a href="#faster-log-explorer">Faster log explorer</a></li>
-<li><a href="#features">Features</a></li>
-<li><a href="#downloads">Downloads</a></li>
+<li><a href="#privacy-policy">Privacy policy</a>
+<ul>
+<li><a href="#crash-logs">Crash Logs</a></li>
+<li><a href="#update-checking">Update Checking</a></li>
+<li><a href="#data-not-collected">Data Not Collected</a></li>
+<li><a href="#questions-and-feedback">Questions and Feedback</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
