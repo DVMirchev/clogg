@@ -1,3 +1,4 @@
+.\release\*.dll
 .\release\klogg_portable.exe
 .\release\documentation.html
 .\COPYING

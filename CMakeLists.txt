@@ -16,7 +16,7 @@ set(PROJECT_DESCRIPTION "${PROJECT_NAME} log viewer")
 option(BUILD_TESTS "Build tests" ON)
 option(USE_LTO "Use link time optimization" ON)
 
-set(BUILD_VERSION "" CACHE STRING "build version")
+set(BUILD_VERSION $ENV{KLOGG_VERSION} CACHE STRING "build version")
 set(BUILD_NUMBER "" CACHE STRING "build number")
 
 set(NOTICE_FILE ${CMAKE_CURRENT_SOURCE_DIR}/NOTICE)

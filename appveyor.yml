@@ -11,6 +11,7 @@ configuration:
   - Release
 
 environment:
+  KLOGG_WORKSPACE: %APPVEYOR_BUILD_FOLDER%
   QTDIR64: C:\Qt\5.15\msvc2019_64
   QTDIR32: C:\Qt\5.15\msvc2019
   SSL_DIR_64: C:\OpenSSL-v111-Win64\bin
@@ -50,10 +51,10 @@ install:
       }
 
 before_build:
-- if %platform%==x64 (set QTDIR=%QTDIR64%) else (set QTDIR=%QTDIR32%)
+- if %platform%==x64 (set Qt5_Dir=%QTDIR64%) else (set Qt5_Dir=%QTDIR32%)
 - if %platform%==x64 (set SSL_DIR=%SSL_DIR_64%) else (set SSL_DIR=%SSL_DIR_32%)
 - if %platform%==x64 (set SSL_ARCH="-x64") else (set SSL_ARCH="")
-- '%QTDIR%\bin\qtenv2.bat'
+- '%Qt5_Dir%\bin\qtenv2.bat'
 - call "%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Community\Common7\Tools\vsdevcmd" -arch=%platform%
 - set PATH=%ProgramFiles(x86)%\NSIS;%PATH%
 - md %APPVEYOR_BUILD_FOLDER%\build
