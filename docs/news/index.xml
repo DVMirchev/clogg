@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Automatic crash reporting</title>
+      <link>https://klogg.filimonov.dev/docs/news/crash_reporting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://klogg.filimonov.dev/docs/news/crash_reporting/</guid>
+      <description>Automatic crash reporting In response to several github issues about unexpected crashes I&amp;rsquo;ve implemented crash dump collection. Thanks to SDK provided by Sentry it is fairly easy to integrate Breakpad/Crashpad to collect minidumps for application crashes and send them to developers for investigation.
+What is included in crash report Crash report provides information about:
+ operating system: name, version, architecture Qt version modules that were loaded into klogg process: filename, size and hashes for symbols stacktraces for all running threads in klogg process  These minidumps do not include content of klogg process memory during the crash.</description>
+    </item>
+    
+    <item>
       <title>Version 20.9 preview</title>
       <link>https://klogg.filimonov.dev/docs/news/release_20.9_preview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
