@@ -77,35 +77,80 @@ Configuration file is now split in two parts:
     
     <item>
       <title>Version 19.2 released</title>
-      <link>https://klogg.filimonov.dev/docs/news/release_19.2/</link>
-      <pubDate>Sat, 27 Jan 2018 15:42:17 +0100</pubDate>
+      <link>https://klogg.filimonov.dev/archive/release_19.2/</link>
+      <pubDate>Fri, 08 Feb 2019 15:42:17 +0100</pubDate>
       
-      <guid>https://klogg.filimonov.dev/docs/news/release_19.2/</guid>
-      <description>Version 19.2 #  This release has following changes:
- significant performance improvements during loading files and searching added an option to keep file closed added polling file settings on Windows renamed filters to highlighters based on pull request by @arthurspa added color picker for choosing highlighters color based on pull request by @safield some quick find fixes added a menu item to clear current log file allow to drag’n’drop several files change bringing main window to front on Windows fixed some UI bugs (progress updates when searching in large files, grey text lines when using limited search areas and more) merged several fixes for file monitoring by @gin-ahirsch added some more encodings based on pull request by @Seeraeuber created builds for x86 and x64 versions of Windows fixed deb and rpm packages add checking for new version on Windows (new version info file is downloaded directly from GitHub) updated 3rdparty libraries to latest versions  Download on Github: klogg 19.</description>
+      <guid>https://klogg.filimonov.dev/archive/release_19.2/</guid>
+      <description>&lt;h2 id=&#34;version-192&#34;&gt;
+  Version 19.2
+  &lt;a class=&#34;anchor&#34; href=&#34;#version-192&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;This release has following changes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;significant performance improvements during loading files and searching&lt;/li&gt;
+&lt;li&gt;added an option to keep file closed&lt;/li&gt;
+&lt;li&gt;added polling file settings on Windows&lt;/li&gt;
+&lt;li&gt;renamed filters to highlighters based on pull request by @arthurspa&lt;/li&gt;
+&lt;li&gt;added color picker for choosing highlighters color based on pull request by @safield&lt;/li&gt;
+&lt;li&gt;some quick find fixes&lt;/li&gt;
+&lt;li&gt;added a menu item to clear current log file&lt;/li&gt;
+&lt;li&gt;allow to drag’n’drop several files&lt;/li&gt;
+&lt;li&gt;change bringing main window to front on Windows&lt;/li&gt;
+&lt;li&gt;fixed some UI bugs (progress updates when searching in large files, grey text lines when using limited search areas and more)&lt;/li&gt;
+&lt;li&gt;merged several fixes for file monitoring by @gin-ahirsch&lt;/li&gt;
+&lt;li&gt;added some more encodings based on pull request by @Seeraeuber&lt;/li&gt;
+&lt;li&gt;created builds for x86 and x64 versions of Windows&lt;/li&gt;
+&lt;li&gt;fixed deb and rpm packages&lt;/li&gt;
+&lt;li&gt;add checking for new version on Windows (new version info file is downloaded directly from GitHub)&lt;/li&gt;
+&lt;li&gt;updated 3rdparty libraries to latest versions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Download on Github: &lt;a href=&#34;https://github.com/variar/klogg/releases/tag/v19.2&#34;&gt;klogg 19.2&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Version 17.12 released</title>
-      <link>https://klogg.filimonov.dev/docs/news/release_17.12/</link>
-      <pubDate>Sat, 27 Jan 2018 15:42:17 +0100</pubDate>
+      <link>https://klogg.filimonov.dev/archive/release_17.12/</link>
+      <pubDate>Mon, 11 Dec 2017 15:42:17 +0100</pubDate>
       
-      <guid>https://klogg.filimonov.dev/docs/news/release_17.12/</guid>
-      <description>Version 17.12 #  This release is base on glogg 1.1.4. The aims of this release are performance improvement and code base modernization. Several feature requests from upstream have been implemented.
-Versioning changed to calendar versioning scheme: Year.Month.Patch.
-Changes:
- Updated to Qt 5.9 (Qt 5.10 on Mac OS) Automagic encoding detection based on uchardet library Using Entropia File System Watcher on all platforms to monitor file changes New index layout in memory to speed up file loading and searching Saving matching lines from filtered view to a file Saving follow mode and marks for opened files Separate portable build Some quick find hotkeys changed  Download on Github: klogg 17.</description>
+      <guid>https://klogg.filimonov.dev/archive/release_17.12/</guid>
+      <description>&lt;h2 id=&#34;version-1712&#34;&gt;
+  Version 17.12
+  &lt;a class=&#34;anchor&#34; href=&#34;#version-1712&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;This release is base on glogg 1.1.4. The aims of this release are performance improvement and code base modernization. Several feature requests from upstream have been implemented.&lt;/p&gt;
+&lt;p&gt;Versioning changed to calendar versioning scheme: Year.Month.Patch.&lt;/p&gt;
+&lt;p&gt;Changes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated to Qt 5.9 (Qt 5.10 on Mac OS)&lt;/li&gt;
+&lt;li&gt;Automagic encoding detection based on uchardet library&lt;/li&gt;
+&lt;li&gt;Using Entropia File System Watcher on all platforms to monitor file changes&lt;/li&gt;
+&lt;li&gt;New index layout in memory to speed up file loading and searching&lt;/li&gt;
+&lt;li&gt;Saving matching lines from filtered view to a file&lt;/li&gt;
+&lt;li&gt;Saving follow mode and marks for opened files&lt;/li&gt;
+&lt;li&gt;Separate portable build&lt;/li&gt;
+&lt;li&gt;Some quick find hotkeys changed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Download on Github: &lt;a href=&#34;https://github.com/variar/klogg/releases/tag/17.12.0&#34;&gt;klogg 17.12&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Version 1.1.3-r1 released</title>
-      <link>https://klogg.filimonov.dev/docs/news/release_1.1.3-r1/</link>
-      <pubDate>Sat, 27 Jan 2018 15:42:17 +0100</pubDate>
+      <link>https://klogg.filimonov.dev/archive/release_1.1.3-r1/</link>
+      <pubDate>Sat, 25 Mar 2017 15:42:17 +0100</pubDate>
       
-      <guid>https://klogg.filimonov.dev/docs/news/release_1.1.3-r1/</guid>
-      <description>Version 1.1.3-r1 #  This release is based on glogg 1.1.3.
-Changes:
- Merged with upstream 1.1.3 Cache some search results in memory Use several cores during search  Download on Github: klogg 1.1.3-r1</description>
+      <guid>https://klogg.filimonov.dev/archive/release_1.1.3-r1/</guid>
+      <description>&lt;h2 id=&#34;version-113-r1&#34;&gt;
+  Version 1.1.3-r1
+  &lt;a class=&#34;anchor&#34; href=&#34;#version-113-r1&#34;&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;This release is based on glogg 1.1.3.&lt;/p&gt;
+&lt;p&gt;Changes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Merged with upstream 1.1.3&lt;/li&gt;
+&lt;li&gt;Cache some search results in memory&lt;/li&gt;
+&lt;li&gt;Use several cores during search&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Download on Github: &lt;a href=&#34;https://github.com/variar/klogg/releases/tag/v1.1.3_r1&#34;&gt;klogg 1.1.3-r1&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

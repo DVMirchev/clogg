@@ -4,16 +4,17 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Version 20.4 #  During this months there were almost no new commits to klogg. For several years klogg has been my second most frequently used tool (first one being code editor) and I&rsquo;ve been doing my best to improve it based on my daily experience and user feedback on github. However, since the beginning of 2020 I&rsquo;ve switched to a more manager-like position. This is all very new to me, and doing this job requires tools not related to log file analysis.">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Version 20.4 released" />
-<meta property="og:description" content="Version 20.4 #  During this months there were almost no new commits to klogg. For several years klogg has been my second most frequently used tool (first one being code editor) and I&rsquo;ve been doing my best to improve it based on my daily experience and user feedback on github. However, since the beginning of 2020 I&rsquo;ve switched to a more manager-like position. This is all very new to me, and doing this job requires tools not related to log file analysis." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://klogg.filimonov.dev/docs/news/release_20.4/" />
-
-<title>Version 20.4 released | KLOGG</title>
+<meta name="description" content="">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Archive" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://klogg.filimonov.dev/archive/" />
+<meta property="og:updated_time" content="2019-02-08T15:42:17+01:00" />
+<title>Archive | KLOGG</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.6cd8553a6854f4812343f0f0c8baca31271e686434f381fbe3c7226f66639176.css" integrity="sha256-bNhVOmhU9IEjQ/DwyLrKMSceaGQ084H748cib2ZjkXY="><!--
+<link rel="stylesheet" href="/book.min.6cd8553a6854f4812343f0f0c8baca31271e686434f381fbe3c7226f66639176.css" integrity="sha256-bNhVOmhU9IEjQ/DwyLrKMSceaGQ084H748cib2ZjkXY="><link rel="alternate" type="application/rss+xml" href="https://klogg.filimonov.dev/archive/index.xml" title="KLOGG" />
+<!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
 -->
@@ -95,7 +96,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/news/release_20.4/" class="active">Version 20.4 released</a>
+    <a href="/docs/news/release_20.4/" class="">Version 20.4 released</a>
   
 
         </li>
@@ -312,7 +313,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Version 20.4 released</strong>
+  <strong>Archive</strong>
 
   <label for="toc-control">
     
@@ -325,13 +326,27 @@ https://github.com/alex-shpak/hugo-book
   
   <aside class="hidden clearfix">
     
-  <nav id="TableOfContents">
+  <nav>
   <ul>
-    <li><a href="#version-204">Version 20.4</a>
+  
+    
+    <li class="book-section-flat">
+      <strong>Categories</strong>
       <ul>
-        <li><a href="#changelog">Changelog</a></li>
+      
       </ul>
     </li>
+    
+  
+    
+    <li class="book-section-flat">
+      <strong>Tags</strong>
+      <ul>
+      
+      </ul>
+    </li>
+    
+  
   </ul>
 </nav>
 
@@ -343,45 +358,116 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h2 id="version-204">
-  Version 20.4
-  <a class="anchor" href="#version-204">#</a>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/archive/release_19.2/">Version 19.2 released</a>
+    </h2>
+    
+  <h5>Feb 8, 2019</h5>
+
+
+
+  
+
+  
+
+
+    <p><h2 id="version-192">
+  Version 19.2
+  <a class="anchor" href="#version-192">#</a>
 </h2>
-<p>During this months there were almost no new commits to klogg. For several years klogg has been my second most frequently used tool (first one being code editor) and I&rsquo;ve been doing my best to improve it based on my daily experience and user feedback on github. However, since the beginning of 2020 I&rsquo;ve switched to a more manager-like position. This is all very new to me, and doing this job requires tools not related to log file analysis. So I decided to make a release of klogg now to bring important fixes and new features to users of stable version.</p>
-<p>I will continue to work on klogg, but less frequent commits are expected.</p>
-<h3 id="changelog">
-  Changelog
-  <a class="anchor" href="#changelog">#</a>
-</h3>
-<p>Firstly, klogg on MacOS is once again usable. Thanks for all users who reported problems:</p>
+<p>This release has following changes:</p>
 <ul>
-<li>MacOS dmg has more user friendly UI.</li>
-<li>Fixed bug with saving user configuration.</li>
-<li>Fixed bug with opening log files with klogg from Finder.</li>
-<li>Fixed some UI rendering issues.</li>
+<li>significant performance improvements during loading files and searching</li>
+<li>added an option to keep file closed</li>
+<li>added polling file settings on Windows</li>
+<li>renamed filters to highlighters based on pull request by @arthurspa</li>
+<li>added color picker for choosing highlighters color based on pull request by @safield</li>
+<li>some quick find fixes</li>
+<li>added a menu item to clear current log file</li>
+<li>allow to drag’n’drop several files</li>
+<li>change bringing main window to front on Windows</li>
+<li>fixed some UI bugs (progress updates when searching in large files, grey text lines when using limited search areas and more)</li>
+<li>merged several fixes for file monitoring by @gin-ahirsch</li>
+<li>added some more encodings based on pull request by @Seeraeuber</li>
+<li>created builds for x86 and x64 versions of Windows</li>
+<li>fixed deb and rpm packages</li>
+<li>add checking for new version on Windows (new version info file is downloaded directly from GitHub)</li>
+<li>updated 3rdparty libraries to latest versions</li>
 </ul>
-<p>Major new features:</p>
+<p>Download on Github: <a href="https://github.com/variar/klogg/releases/tag/v19.2">klogg 19.2</a></p>
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/archive/release_17.12/">Version 17.12 released</a>
+    </h2>
+    
+  <h5>Dec 11, 2017</h5>
+
+
+
+  
+
+  
+
+
+    <p><h2 id="version-1712">
+  Version 17.12
+  <a class="anchor" href="#version-1712">#</a>
+</h2>
+<p>This release is base on glogg 1.1.4. The aims of this release are performance improvement and code base modernization. Several feature requests from upstream have been implemented.</p>
+<p>Versioning changed to calendar versioning scheme: Year.Month.Patch.</p>
+<p>Changes:</p>
 <ul>
-<li>Scratchpad window. This window is used to do some text transformations that are sometimes needed during log analysis, like base64-decoding, xml/json formatting etc.</li>
-<li>Open archives. Klogg can now open zip/gzip/bzip2/xz/7z archives. Files are extracted to temp directory.</li>
-<li>Open files from network url. Klogg will download file to temp directory.</li>
-<li>Multi-window mode. Allows to open several klogg windows. Still experimental feature.</li>
-<li>Menu options to create bug reports and feature requests on github in one click from application.</li>
+<li>Updated to Qt 5.9 (Qt 5.10 on Mac OS)</li>
+<li>Automagic encoding detection based on uchardet library</li>
+<li>Using Entropia File System Watcher on all platforms to monitor file changes</li>
+<li>New index layout in memory to speed up file loading and searching</li>
+<li>Saving matching lines from filtered view to a file</li>
+<li>Saving follow mode and marks for opened files</li>
+<li>Separate portable build</li>
+<li>Some quick find hotkeys changed</li>
 </ul>
-<p>Several usability improvements for all versions:</p>
+<p>Download on Github: <a href="https://github.com/variar/klogg/releases/tag/17.12.0">klogg 17.12</a></p>
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/archive/release_1.1.3-r1/">Version 1.1.3-r1 released</a>
+    </h2>
+    
+  <h5>Mar 25, 2017</h5>
+
+
+
+  
+
+  
+
+
+    <p><h2 id="version-113-r1">
+  Version 1.1.3-r1
+  <a class="anchor" href="#version-113-r1">#</a>
+</h2>
+<p>This release is based on glogg 1.1.3.</p>
+<p>Changes:</p>
 <ul>
-<li>New encoding menu layout.</li>
-<li>New favorites menu to save files that are opened not frequently enough to stay in recent files history</li>
-<li>More options for tabs (opening file location, copying file path to clipboard, tab renaming).</li>
-<li>Autocomplete for search regexp.</li>
-<li>Option to mark several lines at once.</li>
-<li>Fixes for shortcuts.</li>
-<li>Some icon changes.</li>
-<li>More command line options.</li>
+<li>Merged with upstream 1.1.3</li>
+<li>Cache some search results in memory</li>
+<li>Use several cores during search</li>
 </ul>
-<p>As usual 3rdparty libraries were updated, some bugs were fixed, and some more were introduced.</p>
-<p>Download on Github: <a href="https://github.com/variar/klogg/releases/tag/v20.4">klogg 20.4</a></p>
-</article>
+<p>Download on Github: <a href="https://github.com/variar/klogg/releases/tag/v1.1.3_r1">klogg 1.1.3-r1</a></p>
+    </p>
+  </article>
+  
+
+  
+
+
  
       
 
@@ -394,7 +480,7 @@ https://github.com/alex-shpak/hugo-book
 
 
   <div>
-    <a class="flex align-center" href="https://github.com/variar/klogg/edit/master/website/content//docs/news/release_20.4.md" target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/variar/klogg/edit/master/website/content//archive/_index.md" target="_blank" rel="noopener">
       <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
       <span>Edit this page</span>
     </a>
@@ -409,10 +495,6 @@ https://github.com/alex-shpak/hugo-book
 
       
   
-  <div class="book-comments">
-
-</div>
-  
  
 
       <label for="menu-control" class="hidden book-menu-overlay"></label>
@@ -421,13 +503,27 @@ https://github.com/alex-shpak/hugo-book
     
     <aside class="book-toc">
       
-  <nav id="TableOfContents">
+  <nav>
   <ul>
-    <li><a href="#version-204">Version 20.4</a>
+  
+    
+    <li class="book-section-flat">
+      <strong>Categories</strong>
       <ul>
-        <li><a href="#changelog">Changelog</a></li>
+      
       </ul>
     </li>
+    
+  
+    
+    <li class="book-section-flat">
+      <strong>Tags</strong>
+      <ul>
+      
+      </ul>
+    </li>
+    
+  
   </ul>
 </nav>
 
