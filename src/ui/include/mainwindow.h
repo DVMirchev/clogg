@@ -43,6 +43,8 @@
 #include <QSystemTrayIcon>
 #include <QTemporaryDir>
 
+#include <kddockwidgets/MainWindow.h>
+
 #include <array>
 #include <memory>
 #include <mutex>
@@ -65,7 +67,7 @@ class RecentFiles;
 
 // Main window of the application, creates menus, toolbar and
 // the CrawlerWidget
-class MainWindow : public QMainWindow {
+class MainWindow : public KDDockWidgets::MainWindow {
     Q_OBJECT
 
   public:

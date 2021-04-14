@@ -23,6 +23,15 @@ add_subdirectory(karchive)
 add_subdirectory(maddy)
 add_subdirectory(whereami)
 
+set(KDDockWidgets_STATIC ON)
+set(KDDockWidgets_EXAMPLES OFF CACHE INTERNAL "" FORCE)
+
+add_subdirectory(kddockwidgets)
+mark_as_advanced(FORCE KDDockWidgets_QT6)
+mark_as_advanced(FORCE KDDockWidgets_DEVELOPER_MODE)
+mark_as_advanced(FORCE KDDockWidgets_PYTHON_BINDINGS)
+mark_as_advanced(FORCE KDDockWidgets_UNITY_BUILD)
+
 if(KLOGG_USE_SENTRY)
     set(SENTRY_BACKEND "crashpad" CACHE INTERNAL "" FORCE)
     set(SENTRY_TRANSPORT "none" CACHE INTERNAL "" FORCE)

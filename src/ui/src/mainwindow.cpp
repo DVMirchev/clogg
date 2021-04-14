@@ -74,6 +74,8 @@
 #include <QUrlQuery>
 #include <QWindow>
 
+#include <kddockwidgets/DockWidget.h>
+
 #include "mainwindow.h"
 
 #include "crawlerwidget.h"
@@ -106,7 +108,8 @@ static constexpr auto ClipboardMaxTry = 5;
 } // namespace
 
 MainWindow::MainWindow( WindowSession session )
-    : session_( std::move( session ) )
+    : KDDockWidgets::MainWindow("some_name")
+    , session_( std::move( session ) )
     , mainIcon_()
     , iconLoader_( this )
     , signalMux_()
@@ -202,14 +205,18 @@ MainWindow::MainWindow( WindowSession session )
     // Construct the QuickFind bar
     quickFindWidget_.hide();
 
-    QWidget* central_widget = new QWidget();
+    auto central_dock = new KDDockWidgets::DockWidget(QStringLiteral("Dock1"));
+
+    auto central_widget = new QWidget();
     auto* main_layout = new QVBoxLayout();
     main_layout->setContentsMargins( 0, 0, 0, 0 );
     main_layout->addWidget( &mainTabWidget_ );
     main_layout->addWidget( &quickFindWidget_ );
     central_widget->setLayout( main_layout );
 
-    setCentralWidget( central_widget );
+    central_dock->setWidget(central_widget);
+
+    addDockWidget(central_dock, KDDockWidgets::Location_OnLeft);
 
     updateTitleBar( "" );
 
