@@ -5,10 +5,9 @@
 	<meta name="generator" content="Hugo 0.75.1" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Faster log explorer #  klogg is a multi-platform GUI application to search through all kinds of text log files using regular expressions. It is fork of glogg project created by Nicolas Bonnefon.
+<meta name="description" content="Faster log explorer #  klogg is an open source multi-platform GUI application to search through all kinds of text log files using regular expressions. It has started as fork of glogg project created by Nicolas Bonnefon, and has evolved into a separate project with a lot of new features and improvements.
 klogg is designed to:
- be fast handle huge log files provide a clear view of the matches even in heavily cluttered files.  Here is what klogg looks like:
- Features #  klogg inherited a lot of features from glogg">
+ be very fast handle huge log files provide a clear view of the matches even in heavily cluttered files.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="About" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
@@ -342,10 +341,10 @@ https://github.com/alex-shpak/hugo-book
   Faster log explorer
   <a class="anchor" href="#faster-log-explorer">#</a>
 </h2>
-<p><em>klogg</em> is a multi-platform GUI application to search through all kinds of text log files using regular expressions. It is fork of <a href="https://glogg.bonnefon.org/">glogg project</a> created by <a href="https://github.com/nickbnf">Nicolas Bonnefon</a>.</p>
+<p><em>klogg</em> is an open source multi-platform GUI application to search through all kinds of text log files using regular expressions. It has started as fork of <a href="https://glogg.bonnefon.org/">glogg project</a> created by <a href="https://github.com/nickbnf">Nicolas Bonnefon</a>, and has evolved into a separate project with a lot of new features and improvements.</p>
 <p><em>klogg</em> is designed to:</p>
 <ul>
-<li>be fast</li>
+<li>be very fast</li>
 <li>handle huge log files</li>
 <li>provide a clear view of the matches even in heavily cluttered files.</li>
 </ul>
@@ -372,7 +371,6 @@ https://github.com/alex-shpak/hugo-book
 <li>Displays a context view of where in the log the lines of interest are</li>
 <li>Is fast and reads the file directly from disk, without loading it into memory</li>
 <li>Watches for file changes on disk and reloads it (kind of like tail)</li>
-<li>Is open source, released under the GPL</li>
 </ul>
 
   </div>
@@ -380,13 +378,13 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex-even markdown-inner">
     <p><em>klogg</em> improves and brings more</p>
 <ul>
-<li>Builds initial file index significantly faster</li>
-<li>Uses multiple CPU cores to do regular expression matching</li>
-<li>Detects log file encoding using uchardet library (support utf8, utf16, cp1251 and more)</li>
+<li>Is optimized for modern CPUs with multiple cores and SIMD instructions</li>
+<li>Has portable version (no need to install)</li>
+<li>Understands a lot of text encodings and detects many of them automatically</li>
 <li>Allows to perform search in a portion of huge log file</li>
-<li>Keeps in-memory cache of search results per search pattern</li>
-<li>Allows to paste some text from clipboard for further analysis</li>
-<li>Has portable version for Windows (no need to install)</li>
+<li>Supports multiple sets of text highlight rules with more sophisticated match options</li>
+<li>Provides many small features to make life easier (tab renaming, favorite files list, archive extraction,
+scratchpad etc.)</li>
 </ul>
 
   </div>
